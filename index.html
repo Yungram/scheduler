@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Week and Chores</title>
+<meta name="description" content="Today, the week, the chore rotation and to-dos in one place.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c211f" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Week">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <span class="brand">Week and Chores</span>
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button type="button" class="tab" role="tab" id="tab-today" data-view="today">Today</button>
+      <button type="button" class="tab" role="tab" id="tab-week" data-view="week">Week</button>
+      <button type="button" class="tab" role="tab" id="tab-chores" data-view="chores">Chores</button>
+      <button type="button" class="tab" role="tab" id="tab-history" data-view="history">History</button>
+    </nav>
+    <span class="status" id="status"><i></i><span>Connecting</span></span>
+    <button type="button" id="signout" hidden>Sign out</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <form id="add" autocomplete="off">
+    <input id="add-title" type="text" placeholder="Add a to-do, like 'Call the plumber'" aria-label="To-do" maxlength="140" required>
+    <select id="add-when" aria-label="When"></select>
+    <button type="submit">Add</button>
+  </form>
+  <div id="view"></div>
+</main>
+</body>
+</html>
