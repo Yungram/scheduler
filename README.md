@@ -1,4 +1,4 @@
-# Week and Chores
+# Scheduler
 
 A personal weekly planner: today's schedule with tasks in their time blocks, the week at a glance, a four-week house chore rotation with seasonal maintenance, to-dos that carry over, and a history of what got done.
 
@@ -28,7 +28,7 @@ Then open http://localhost:8765. Opening `index.html` directly from the file sys
 
 ### 1. Create the Firebase project
 
-1. Go to https://console.firebase.google.com and click **Create a project**. Any name works, for example `week-and-chores`. Google Analytics is not needed.
+1. Go to https://console.firebase.google.com and click **Create a project**. Any name works, for example `scheduler`. Google Analytics is not needed.
 2. **Build > Authentication > Get started**, then under **Sign-in method** enable **Google**.
 3. **Build > Firestore Database > Create database**. Pick a location near you (for example `northamerica-northeast1` for Montréal or `northamerica-northeast2` for Toronto) and start in **production mode**.
 4. In Firestore, open the **Rules** tab, replace the contents with `firestore.rules` from this repo, and click **Publish**.
@@ -38,9 +38,9 @@ These config values are not secret. They identify the project; the rules and Goo
 
 ### 2. Publish on GitHub Pages
 
-1. Create an empty GitHub repository, for example `week-and-chores`, and push this folder to it.
+1. Create an empty GitHub repository, for example `scheduler`, and push this folder to it.
 2. In the repository: **Settings > Pages > Build and deployment**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-3. After a minute the site is at `https://<your-username>.github.io/week-and-chores/`.
+3. After a minute the site is at `https://<your-username>.github.io/scheduler/`.
 
 ### 3. Allow sign-in from the site
 

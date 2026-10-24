@@ -1,6 +1,6 @@
 // Offline support: try the network first so updates show up right away,
 // and fall back to the last cached copy when there is no connection.
-const CACHE = "week-and-chores-v1";
+const CACHE = "scheduler-v1";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "firebase-config.js", "manifest.webmanifest", "icon.svg", "icon-180.png", "icon-192.png", "icon-512.png"];
 const CACHEABLE = [self.location.origin, "https://www.gstatic.com", "https://fonts.googleapis.com", "https://fonts.gstatic.com"];
 

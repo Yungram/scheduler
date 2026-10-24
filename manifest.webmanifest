@@ -1,6 +1,6 @@
 {
-  "name": "Week and Chores",
-  "short_name": "Week",
+  "name": "Scheduler",
+  "short_name": "Scheduler",
   "description": "Today, the week, the chore rotation and to-dos in one place.",
   "start_url": "./",
   "scope": "./",

@@ -197,7 +197,7 @@ function slipping(today){
 // With Firebase configured, data lives in Firestore under users/<your uid>/ and syncs between devices.
 // Without it (placeholders still in firebase-config.js), everything stays in this browser.
 const FB="https://www.gstatic.com/firebasejs/10.14.1/";
-const LKEY="week-and-chores-v1";
+const LKEY="scheduler-v1";
 let fb=null,uid=null,mode="connecting",unsubs=[];
 function saveLocal(){try{localStorage.setItem(LKEY,JSON.stringify(state))}catch(e){}}
 function loadLocal(){try{const s=JSON.parse(localStorage.getItem(LKEY)||"{}");["weeks","months","meta","todos"].forEach(k=>{if(s&&s[k])state[k]=s[k]})}catch(e){}}
